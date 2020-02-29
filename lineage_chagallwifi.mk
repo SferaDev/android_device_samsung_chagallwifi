@@ -35,3 +35,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=chagallwifi \
     PRODUCT_DEVICE=chagallwifi \
     TARGET_DEVICE=chagallwifi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=1
+
+BOARD_KERNEL_CMDLINE += \
+    androidboot.selinux=disabled
